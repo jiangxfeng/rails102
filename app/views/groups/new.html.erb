@@ -6,7 +6,7 @@
 
     <% if @group.errors.any? %>
     <ul>
-    <% if @group.erros.full_messages.each do |msg| %>
+      <% @group.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
   </ul>
